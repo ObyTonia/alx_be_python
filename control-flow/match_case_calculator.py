@@ -23,3 +23,5 @@ def main():
 
   result = calculate(num1, num2, operator)
   print(result)
+  if __name__ == "__main__":
+    main()
