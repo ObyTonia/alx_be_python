@@ -22,6 +22,6 @@ def main():
   operator = input("Choose the operation (+, -, *, /): ")
 
   result = calculate(num1, num2, operator)
-  print(result)
-  if __name__ == "__main__":
-    main()
+  # Output the result
+  if result is not None:
+    print(f"The result is {result:.2f}")  # Format result with 2 decimal places print(result)
