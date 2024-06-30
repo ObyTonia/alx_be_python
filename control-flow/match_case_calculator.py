@@ -24,4 +24,4 @@ def main():
   result = calculate(num1, num2, operator)
   # Output the result
   if result is not None:
-    print("The result is {result:}") 
+    print(f"The result is {result:}")
