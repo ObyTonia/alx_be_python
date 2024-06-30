@@ -1,3 +1,9 @@
+def main():
+  """Prompts user for input and performs calculation."""
+  num1 = float(input("Enter the first number: "))
+  num2 = float(input("Enter the second number: "))
+  operator = input("Choose the operation (+, -, *, /): ")
+
 def calculate(num1, num2, operator):
   """Performs the chosen operation using match-case."""
   match operator:
@@ -14,14 +20,6 @@ def calculate(num1, num2, operator):
         return num1 / num2
     case _:
       return "Invalid operation."
-
-def main():
-  """Prompts user for input and performs calculation."""
-  num1 = float(input("Enter the first number: "))
-  num2 = float(input("Enter the second number: "))
-  operator = input("Choose the operation (+, -, *, /): ")
-
-  result = calculate(num1, num2, operator)
   # Output the result
-  if result is not None:
-    print(f"The result is {result:}")
+  result = calculate(num1, num2, operator)
+  print(f"The result is {result:}")
