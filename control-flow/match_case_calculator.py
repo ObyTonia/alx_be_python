@@ -6,7 +6,7 @@ def main():
 
 def calculate(num1, num2, operator):
   """Performs the chosen operation using match-case."""
-  match operation:
+  match operator:
     case "+":
       return num1 + num2
     case "-":
@@ -21,4 +21,4 @@ def calculate(num1, num2, operator):
     case _:
       return "Invalid operation."
     
-    print(f"The result is {result:}")
+    print(f"The result is {resul}")
