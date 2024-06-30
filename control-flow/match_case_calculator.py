@@ -20,6 +20,5 @@ def calculate(num1, num2, operator):
         return num1 / num2
     case _:
       return "Invalid operation."
-  # Output the result
-  result = calculate(num1, num2, operator)
-  print(f"The result is {result:}")
+    
+    print(f"The result is {result:}")
