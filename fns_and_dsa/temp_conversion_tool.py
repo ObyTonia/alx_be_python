@@ -25,7 +25,7 @@ def main ():
     while True:
         try:
            temperature = float (input("Enter the temperature to convert: "))
-           unit = input ("Is this temperature in Celsius or Fahrenheit (C/F): ").upper()
+           unit = input ("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
            if unit == "F":
               converted_temperature = convert_to_celsius (temperature)
               converted_unit = "C"
