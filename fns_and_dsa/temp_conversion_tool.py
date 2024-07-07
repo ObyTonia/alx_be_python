@@ -18,7 +18,7 @@ def convert_to_fahrenheit (celsius):
         celsius (float): The temperature in Celsius.
     Returns:
         float: The temperature in Fahrenheit"""
-    fahrenheit = celsius + 32 * CELSIUS_TO_FAHRENHEIT_FACTOR
+    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     return fahrenheit
 def main ():
     """Prompts the user for temperature and unit, performs conversion, and displays the result."""
