@@ -18,7 +18,7 @@ def convert_to_fahrenheit (celsius):
         celsius (float): The temperature in Celsius.
     Returns:
         float: The temperature in Fahrenheit"""
-    fahrenheit = (celsius + 32) * CELSIUS_TO_FAHRENHEIT_FACTOR
+    fahrenheit = celsius + 32 * CELSIUS_TO_FAHRENHEIT_FACTOR
     return fahrenheit
 def main ():
     """Prompts the user for temperature and unit, performs conversion, and displays the result."""
@@ -38,6 +38,5 @@ def main ():
            break  
         except ValueError as e:
            print(f"Error: {e}")
-
-#if __name__ == "__main__":
-  #main()
+if __name__ == "__main__":
+   main()
