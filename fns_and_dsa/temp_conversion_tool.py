@@ -33,7 +33,7 @@ def main ():
             converted_temperature = convert_to_fahrenheit(temperature)
             converted_unit = "F"
            else:
-              raise ValueError("Invalid unit. Please enter 'C' or 'F'.")
+              raise ValueError("Invalid temperature. Please enter a numeric value.")
            print(f"{temperature:.2f} degrees {unit} is equal to {converted_temperature:.2f} degrees {converted_unit}.")
            break  
         except ValueError as e:
