@@ -5,7 +5,7 @@ def main():
   # Get user input for pattern size
   while True:
     try:
-      size = int(input("Enter the size of the pattern (positive integer): "))
+      size = int(input("Enter the size of the pattern: "))
       if size > 0:
         break
       else:
