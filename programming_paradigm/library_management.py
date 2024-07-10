@@ -6,6 +6,23 @@ class Book:
     def __str__(self):
        """Returns a string representation of the book."""
        return f"{self.title} by {self.author}"
+    
+    def is_checked_out(self):
+        return self._is_checked_out
+    
+    def check_out(self):
+        if not self._is_checked_out:
+            self._is_checked_out = True
+            return True
+        else:
+            return False
+
+    def return_book(self):
+        if self._is_checked_out:
+            self._is_checked_out = False
+            return True
+        else:
+            return False
 
 class Library:
     """Represents a library with a collection of books."""
@@ -23,11 +40,10 @@ class Library:
             book._is_checked_out = True
             print(f"{title} has been checked out successfully.")
             return
-        print(f"Sorry, '{title}' is not available for checkout.")
+       print(f"Sorry, '{title}' is not available for checkout.")
        
-    def return_book(self):
+    def return_book(self, title):
         """Attempts to return a book by title, marking it available."""
-        self.title = title 
         for book in self._books:
            if book.title == title and book._is_checked_out:
              book._is_checked_out = False
