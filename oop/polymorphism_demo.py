@@ -56,4 +56,4 @@ class Circle(Shape):
 
     Overrides the base class area() method.
     """
-    return math.pi * self.radius**2
+    return math.pi * self.radius** 2
